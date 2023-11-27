@@ -1,6 +1,6 @@
 # Dépendences
 
-- [Bilbiothèque MLV](http://www-igm.univ-mlv.fr/~boussica/mlv/index.html)
+- [Bibliothèque MLV](http://www-igm.univ-mlv.fr/~boussica/mlv/index.html)
 
 # Documentation utilisateur
 
