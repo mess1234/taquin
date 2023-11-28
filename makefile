@@ -1,7 +1,8 @@
 CC		:= gcc
 CFLAGS	:= -ansi -pedantic -Wall -Wpadded
 LDFLAGS	:= -lMLV
-OBJ		:= obj/main.o obj/action.o obj/io.o obj/game_data.o obj/coord.o
+SOURCES	:= $(wildcard src/*.c)
+OBJECTS	:= $(SOURCES:src/%.c=obj/%.o)
 EXEC	:= bin/taquin.out
 
 ######
@@ -11,7 +12,7 @@ all:
 	mkdir -p bin/ obj/
 	make $(EXEC)
 
-$(EXEC): $(OBJ)
+$(EXEC): $(OBJECTS)
 	$(CC) $(CFLAGS) $^ -o $@ $(LDFLAGS)
 
 # C modules
